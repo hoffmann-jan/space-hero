@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovementController : MonoBehaviour
 {
@@ -28,5 +27,12 @@ public class PlayerMovementController : MonoBehaviour
         playerAnimator.SetBool("IsFlyingLeft", horizontal < 0);
         playerAnimator.SetBool("IsFlyingRight", horizontal > 0);
         playerAnimator.SetBool("IsFlyingUp", vertical > 0);
+    }
+
+    // When Player dies
+    private void OnDisable()
+    {
+        // Load main scene (restart)
+        SceneManager.LoadScene(0);
     }
 }
