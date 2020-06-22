@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 4094740258369364863}
   - component: {fileID: 4094740258369364859}
   - component: {fileID: 4094740258369364858}
+  - component: {fileID: 176188297}
+  - component: {fileID: 6008508157542822084}
   m_Layer: 0
   m_Name: BulletPlayer
-  m_TagString: Untagged
+  m_TagString: Bulllet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,3 +142,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &176188297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4094740258369364862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44d2905158b04ce4a3996f91d1ef74c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Velocity: {x: 0, y: 4}
+--- !u!114 &6008508157542822084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4094740258369364862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f93b1310c4b24d42aaca487fedd0c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
